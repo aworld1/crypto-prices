@@ -5,6 +5,7 @@
       {
         id: 'bitcoin',
         name: 'Bitcoin',
+        ticker: 'BTC',
         logo: 'img/bitcoin.png',
         gradientColors: ['#F7931A', '#FEB443', '#FFC970'],
         historicalPrice: 102000
@@ -12,6 +13,7 @@
       {
         id: 'ethereum',
         name: 'Ethereum',
+        ticker: 'ETH',
         logo: 'img/ethereum.png',
         gradientColors: ['#3C3C3D', '#888888', '#BBBBBB'],
         historicalPrice: 3300
@@ -19,13 +21,15 @@
       {
         id: 'solana',
         name: 'Solana',
+        ticker: 'SOL',
         logo: 'img/solana.png',
-        gradientColors: ['#00FFA3', '#DC1FFF', '#9945FF'],
+        gradientColors: ['#9945FF', '#DC1FFF', '#00FFA3'],
         historicalPrice: 245
       },
       {
         id: 'virtual-protocol',
         name: 'Virtuals Protocol',
+        ticker: 'VIRTUAL',
         logo: 'img/virtuals.png',
         gradientColors: ['#C7F1F2', '#DDF8E2', '#F0FFD6'],
         historicalPrice: 2.7
@@ -107,7 +111,7 @@
             href={getCoinGeckoUrl(coin.id)}
             target="_blank"
             rel="noopener noreferrer"
-            class="block transform hover:scale-[1.02] transition-transform duration-200 cursor-pointer"
+            class="block transform hover:scale-[1.02] transition-transform duration-200 cursor-pointer relative group"
           >
             <div
               class="rounded-lg shadow-md p-6 flex flex-row items-center justify-between relative h-48"
@@ -131,6 +135,13 @@
                   }
                 </p>
               </div>
+            </div>
+            
+            <!-- Tooltip -->
+            <div class="invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-opacity duration-200 absolute -top-12 left-1/2 transform -translate-x-1/2 bg-black text-white text-sm py-2 px-4 rounded whitespace-nowrap z-10">
+              {coin.ticker}: ${coin.currentPrice?.toFixed(2) ?? 'N/A'}
+              <!-- Arrow -->
+              <div class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-black rotate-45"></div>
             </div>
           </a>
         {/each}
