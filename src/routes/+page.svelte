@@ -5,28 +5,28 @@
       {
         id: 'bitcoin',
         name: 'Bitcoin',
-        logo: 'src/lib/img/bitcoin.png',
+        logo: 'img/bitcoin.png',
         gradientColors: ['#F7931A', '#FEB443', '#FFC970'],
         historicalPrice: 102000
       },
       {
         id: 'ethereum',
         name: 'Ethereum',
-        logo: 'src/lib/img/ethereum.png',
+        logo: 'img/ethereum.png',
         gradientColors: ['#3C3C3D', '#888888', '#BBBBBB'],
         historicalPrice: 3300
       },
       {
         id: 'solana',
         name: 'Solana',
-        logo: 'src/lib/img/solana.png',
+        logo: 'img/solana.png',
         gradientColors: ['#00FFA3', '#DC1FFF', '#9945FF'],
         historicalPrice: 245
       },
       {
         id: 'virtual-protocol',
         name: 'Virtuals Protocol',
-        logo: 'src/lib/img/virtuals.png',
+        logo: 'img/virtuals.png',
         gradientColors: ['#C7F1F2', '#DDF8E2', '#F0FFD6'],
         historicalPrice: 2.7
       }
