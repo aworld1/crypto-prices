@@ -87,10 +87,10 @@
   </script>
   
   <div class="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-4">
-    <h1 class="text-4xl md:text-5xl text-center mb-8 leading-tight font-semibold w-[800px] mb-16">
+    <h1 class="text-2xl md:text-3xl lg:text-4xl text-center leading-tight font-semibold max-w-3xl px-4 mb-8 md:mb-16">
       If you invested 
       <b class="font-extrabold">$1000</b> 
-    on the 
+      on the<br class="hidden sm:block" />
       <b class="font-extrabold">first day of class</b>, you would have
     </h1>
   
