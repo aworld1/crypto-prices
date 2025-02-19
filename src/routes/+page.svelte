@@ -95,9 +95,10 @@
       If you invested 
       <b class="font-extrabold">$1000</b> 
       on the<br class="hidden sm:block" />
-    <b class="font-extrabold relative group cursor-help">first day of class
-      <span class="invisible group-hover:visible absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black text-white text-sm py-1 px-2 rounded whitespace-nowrap">Jan 21, 2025</span>
-    </b>, you would have
+    <span class="relative group inline-block">
+      <b class="font-extrabold cursor-help">first day of class</b>
+      <span class="invisible group-hover:visible absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-black text-white text-sm py-1 px-2 rounded whitespace-nowrap">Jan 21, 2025</span>
+    </span>, you would have
     </h1>
   
     {#if isLoading}
